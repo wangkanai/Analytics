@@ -1,5 +1,4 @@
-# universalanalytics
-##Google Universal Analytics
+#Google Universal Analytics
 
 ### What is Google Universal Analytics?
 
