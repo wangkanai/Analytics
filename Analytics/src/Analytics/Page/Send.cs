@@ -16,5 +16,11 @@ namespace Analytics.Page
 	    {
 		    
 	    }
-    }
+
+		public override string ToString()
+		{
+			var js = "ga('send', 'pageview');";
+			return js;
+		}
+	}
 }

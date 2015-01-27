@@ -1,13 +1,17 @@
 ﻿{
-	"version": "1.0.0-*",
+	"version": "2.0.0-*",
 	"dependencies": {
+
 
 	},
 	"frameworks": {
 		"aspnet50": {
-			"dependencies": {				
+			"dependencies": {
+				"System.Runtime" :  "4.0.20-beta-22416"
 			}
-		}//,
+		}
+		// Waiting for the .net core to mature in the library
+		//,
 		//"aspnetcore50": {
 		//	"dependencies": {
 		//		"System.Runtime": "4.0.20-beta-22416",

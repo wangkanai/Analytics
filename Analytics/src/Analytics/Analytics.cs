@@ -16,7 +16,7 @@ namespace Analytics
 
 		public string Render()
 		{
-			var tracker = new Tracker();
+			var tracker = new Tracker("UA-XXXX-Y");
 			return ""; //tracker.Name;
 		}	        
     }
