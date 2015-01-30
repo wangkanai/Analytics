@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace Analytics.Advanced
+namespace Analytics
 {
 	public class ConfigObject
 	{
