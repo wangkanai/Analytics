@@ -8,3 +8,8 @@ This project is SDK library for .NET Framework is developer to render **analytic
 
 ### How do i use it?
 This project provide the full source code and complied dll library for you to add reference into your visual studio projects. The library include Intellisense to help guide you write server-side code in an effective manner.
+![Intellisense](https://raw.githubusercontent.com/wangkanai/universalanalytics/master/Analytics/wiki/Intellisense.png)
+
+###How do i contribute?
+Google Analytics is a powerful and continuous improving platform and in order to keep this library aligned with Google Analytics features. 
+![mvc showcase](https://raw.githubusercontent.com/wangkanai/universalanalytics/master/Analytics/wiki/Universal-Analytics-Mvc.png)
