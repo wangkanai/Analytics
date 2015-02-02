@@ -6,7 +6,7 @@ namespace Analytics
 	/// <summary>
 	/// Event tracking allows you to measure how users interact with the content of your website. For example, you might want to measure how many times a button was pressed, or how many times a particular item was used in a web game.
 	/// </summary>
-	public class Event
+	public class Event : TrackerObject
 	{
 		[Description("Typically the object that was interacted with (e.g. button)")]
 		public string Category { get; set; }
@@ -40,25 +40,13 @@ namespace Analytics
 			Value = value;
 		}
 
-		private string Optional()
+		public override string Js()
 		{
-			if (Label != null && Value != 0)
-				return string.Format(", '{0}', {1}", Label, Value);
-			if (Label != null)
-				return string.Format(", '{0}'", Label);
-			return "";
-		}
-
-		public override string ToString()
-		{
-			var js = string.Format("ga('send', 'event', '{0}', '{1}'{2});",
-				Category,
-				Action,
-				Optional()
-				);
-			// waiting for visual studio 2015 rtm
-			//var gs = $"ga('send', 'event', ' {Category}', '{Action}'{Optional()});";
-			return js;
+            var name = GetType().Name.ToLower();
+            var js = $"'{name}','{Category}','{Action}'";
+            if (!string.IsNullOrEmpty(Label)) js += $",'{Label}'";
+            if (!string.IsNullOrEmpty(Label) && Value > 0) js += $",{Value}";
+            return js;
 		}
 	}
 }
