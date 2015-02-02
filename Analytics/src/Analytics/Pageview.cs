@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.Runtime.InteropServices;
 
 namespace Analytics
 {
@@ -33,5 +34,10 @@ namespace Analytics
 			var js = $"'{name}'{options}";
 			return options;
 		}
+	}
+
+	public class PageviewTests
+	{
+		
 	}
 }
