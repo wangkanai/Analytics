@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using Analytics.Common;
+using System.ComponentModel;
 
 namespace Analytics
 {

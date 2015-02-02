@@ -1,4 +1,6 @@
-﻿namespace Analytics
+﻿using Analytics.Common;
+
+namespace Analytics
 {
 	public abstract class Require : IJavascript
 	{

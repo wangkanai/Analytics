@@ -1,6 +1,6 @@
-﻿namespace Analytics
+﻿namespace Analytics.Common
 {
-	public abstract class FieldOption : Field, IJavascript
+	public abstract class FieldOption : Field
 	{
 		public override string Js()
 		{

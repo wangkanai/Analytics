@@ -1,13 +1,20 @@
 ﻿using System;
-using System.Collections;
+using Analytics.Common;
 
 namespace Analytics
 {
-	public abstract class Send
+	public class Send : IJavascript
 	{
-		public string Js(IJavascript method)
+		public TrackerObject HitType { get; set; }
+
+        public Send(TrackerObject TrackerObject)
+        {
+            HitType = TrackerObject;
+        }
+
+		public string Js()
 		{
-			var syntax = method.Js();
+			var syntax = HitType.Js();
 			var js = $"ga('send', {syntax});";
 			return js;
 		}

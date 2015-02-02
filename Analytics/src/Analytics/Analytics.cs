@@ -14,8 +14,10 @@ namespace Analytics
         private Analytics() {}
         static Analytics() {}
 
+        // unit testing is not working yet. this my test bed
 		public string Render()
 		{
+            var js = new Send(new Pageview()).Js();
 			var tracker = new Tracker("UA-XXXX-Y");
 			return tracker.Id; //tracker.Name;
 		}	        

@@ -1,10 +1,9 @@
-﻿using System.ComponentModel;
-using System.Runtime.InteropServices;
-using Xunit;
+﻿using Analytics.Common;
+using System.ComponentModel;
 
 namespace Analytics
 {
-	public class Pageview : FieldOption, IJavascript
+	public class Pageview : TrackerObject
 	{
 		[Description("URL of the page being tracked. By default, analytics.js sets this to the full document URL, excluding the fragment identifier.")]
 		public string Location { get; private set; }
@@ -34,16 +33,6 @@ namespace Analytics
 			var options = base.Js()?.Insert(0,",");
 			var js = $"'{name}'{options}";
 			return options;
-		}
-	}
-
-	public class PageviewTests
-	{
-		[Fact]
-		public void CreatePageviewTest() {
-			var js = "ga('send', 'pageview');";
-			var pageview = new Pageview();
-			Assert.Equal(js, pageview.Js());
 		}
 	}
 }
