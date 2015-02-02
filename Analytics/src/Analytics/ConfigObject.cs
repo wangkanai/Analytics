@@ -2,7 +2,7 @@
 
 namespace Analytics
 {
-	public class ConfigObject
+	public class ConfigObject : Field
 	{
 		[Description("Optional: Name of the tracker object")]
 		public string Name { get; set; }

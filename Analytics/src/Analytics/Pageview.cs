@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel;
 using System.Runtime.InteropServices;
+using Xunit;
 
 namespace Analytics
 {
@@ -38,6 +39,11 @@ namespace Analytics
 
 	public class PageviewTests
 	{
-		
+		[Fact]
+		public void CreatePageviewTest() {
+			var js = "ga('send', 'pageview');";
+			var pageview = new Pageview();
+			Assert.Equal(js, pageview.Js());
+		}
 	}
 }

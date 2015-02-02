@@ -36,7 +36,7 @@ namespace Analytics
 			return value.ToString();
 		}
 
-		internal bool Exist(object value)
+		private bool Exist(object value)
 		{
 			if (value == null) return false;
 			if (value as string != null) if (string.IsNullOrEmpty((string)value)) return false;
