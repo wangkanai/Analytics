@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.Reflection;
 
-namespace Analytics
+namespace AnalyticsOld
 {
     public class Tracker
     {		

@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Reflection;
 
-namespace Analytics.Common
+namespace AnalyticsOld.Common
 {
 	public abstract class Field : IJavascript
 	{

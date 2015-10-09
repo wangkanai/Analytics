@@ -1,7 +1,7 @@
 ﻿using Analytics.Common;
 using System;
 
-namespace Analytics
+namespace AnalyticsOld
 {
     public abstract class TrackerObject : FieldOption
     {

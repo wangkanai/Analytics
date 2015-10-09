@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 
-namespace Analytics
+namespace AnalyticsOld
 {
     /// <summary>
     /// User Timings - Studies have shown that reducing page load time improves the overall user experience of a site. Google Analytics has a number of powerful reports that automatically measure and report on page load times. However, it is also possible to track custom timing information to measure performance information specific to your site. For example to measure the time it takes for a particular JavaScript library to load.

@@ -1,6 +1,6 @@
 ﻿using Analytics.Common;
 
-namespace Analytics
+namespace AnalyticsOld
 {
 	public abstract class Require : IJavascript
 	{

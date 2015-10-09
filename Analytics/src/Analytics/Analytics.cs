@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.CompilerServices;
 
-namespace Analytics
+namespace AnalyticsOld
 {
 	/// <summary>
 	/// This is a singleton service class that will interact with Google Analytics

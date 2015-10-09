@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace Analytics
+namespace AnalyticsOld
 {
     /// <summary>
     /// Page Tracking - Page tracking allows you to measure the number of views you had of a particular page on your web site. For a web app, you might decide to track a page when a large portion of the screen changes, for example when the user goes from the home screen to the settings screen.

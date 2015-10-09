@@ -1,4 +1,4 @@
-﻿namespace Analytics.Common
+﻿namespace AnalyticsOld.Common
 {
 	public interface IJavascript
 	{

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 
-namespace Analytics
+namespace AnalyticsOld
 {
     public class Social : TrackerObject
     {

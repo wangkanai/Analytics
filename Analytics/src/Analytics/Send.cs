@@ -1,7 +1,7 @@
 ﻿using System;
 using Analytics.Common;
 
-namespace Analytics
+namespace AnalyticsOld
 {
 	public class Send : IJavascript
 	{

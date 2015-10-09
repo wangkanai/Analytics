@@ -1,20 +1,21 @@
 ﻿{
-	"version": "2.0.0-*",
-	"dependencies": {
-	},
-	"frameworks": {
-		"aspnet50": {
-			"dependencies": {
+  "version": "1.0.0-*",
+  "description": "Analytics Class Library",
+  "authors": [ "Sarin" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
 
-			}
-		}
-		// Waiting for the .net core to mature in the library
-		//,
-		//"aspnetcore50": {
-		//	"dependencies": {
-		//		"System.Runtime": "4.0.20-beta-22416",
-		//		"System.ComponentModel": "4.0.0-beta-22416"
-		//	}
-		//}
-	}
+  "dependencies": {
+    "System.Collections": "4.0.10-beta-23019",
+    "System.Linq": "4.0.0-beta-23019",
+    "System.Threading": "4.0.10-beta-23019",
+    "System.Runtime": "4.0.10-beta-23019",
+    "Microsoft.CSharp": "4.0.0-beta-23019",
+    "System.ComponentModel": "4.0.0"
+  },
+
+  "frameworks": {
+    "dotnet": { }
+  }
 }
