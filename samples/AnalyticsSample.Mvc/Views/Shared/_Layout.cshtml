@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>@ViewData["Title"] - Universal Analytic</title>
+
+        <environment names="Development">
+            <link rel="stylesheet" href="~/css/bootstrap.css" />            
+            <link rel="stylesheet" href="~/css/site.css" />
+        </environment>
+        <environment names="Staging,Production">
+            <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.0.0/css/bootstrap.min.css"
+                  asp-fallback-href="~/css/bootstrap.min.css"
+                  asp-fallback-test-class="hidden" asp-fallback-test-property="visibility" asp-fallback-test-value="hidden" />
+            <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+        </environment>
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a asp-controller="Home" asp-action="Index" class="navbar-brand">Universal Analytics</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a asp-controller="Home" asp-action="Index">Index</a></li>
+                        <li><a asp-controller="Home" asp-action="About">Cookie</a></li>
+                        <li><a asp-controller="Home" asp-action="Contact">Pageview</a></li>
+                        <li><a asp-controller="Home" asp-action="Event">Event</a></li>
+                        <li><a asp-controller="Home" asp-action="Ecommerce">Ecommerce</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>&copy; 2015 - Google Universal Analytics</p>
+            </footer>
+        </div>
+
+        <environment names="Development">
+            <script src="~/js/site.js" asp-append-version="true"></script>
+        </environment>
+        <environment names="Staging,Production">
+            <script src="~/js/site.js" asp-append-version="true"></script>
+        </environment>
+
+        @RenderSection("scripts", required: false)
+    </body>
+</html>

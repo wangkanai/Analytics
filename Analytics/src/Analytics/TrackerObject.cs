@@ -1,4 +1,4 @@
-﻿using Analytics.Common;
+﻿using AnalyticsOld.Common;
 using System;
 
 namespace AnalyticsOld

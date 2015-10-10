@@ -1,5 +1,5 @@
 ﻿using System;
-using Analytics.Common;
+using AnalyticsOld.Common;
 
 namespace AnalyticsOld
 {

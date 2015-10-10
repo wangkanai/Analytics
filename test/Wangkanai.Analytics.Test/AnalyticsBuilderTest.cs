@@ -6,7 +6,7 @@ using Xunit;
 
 namespace Wangkanai.Analytics
 {
-    public class AnalyticsTests
+    public class AnalyticsBuilderTest
     {
         [Fact]
         public void RenderEmptySession()
