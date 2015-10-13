@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "Microsoft.AspNet.Http": "1.0.0-*",
-    "Microsoft.Extensions.DependencyInjection.Abstractions": "1.0.0-*"
+    "Microsoft.Extensions.DependencyInjection.Abstractions": "1.0.0-beta7"
   },
 
   "frameworks": {

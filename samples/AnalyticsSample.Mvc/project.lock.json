@@ -950,6 +950,24 @@
           "lib/dnx451/Microsoft.Dnx.Runtime.Abstractions.dll": {}
         }
       },
+      "Microsoft.Extensions.DependencyInjection/1.0.0-rc1-15674": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "1.0.0-rc1-15674"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Extensions.DependencyInjection.dll": {}
+        }
+      },
       "Microsoft.Extensions.DependencyInjection.Abstractions/1.0.0-rc1-15674": {
         "type": "package",
         "frameworkAssemblies": [
@@ -1502,7 +1520,7 @@
         "type": "project",
         "dependencies": {
           "Microsoft.AspNet.Http": "1.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "1.0.0"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "1.0.0-beta7"
         }
       }
     },
@@ -2333,6 +2351,22 @@
           "lib/dnxcore50/Microsoft.Dnx.Runtime.Abstractions.dll": {}
         }
       },
+      "Microsoft.Extensions.DependencyInjection/1.0.0-rc1-15674": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "1.0.0-rc1-15674",
+          "System.Collections": "4.0.11-beta-23405",
+          "System.Collections.Concurrent": "4.0.11-beta-23405",
+          "System.Threading": "4.0.11-beta-23405",
+          "System.Threading.Tasks": "4.0.11-beta-23405"
+        },
+        "compile": {
+          "lib/dnxcore50/Microsoft.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/dnxcore50/Microsoft.Extensions.DependencyInjection.dll": {}
+        }
+      },
       "Microsoft.Extensions.DependencyInjection.Abstractions/1.0.0-rc1-15674": {
         "type": "package",
         "dependencies": {
@@ -2899,7 +2933,7 @@
           "lib/DNXCore50/System.Collections.dll": {}
         }
       },
-      "System.Collections.Concurrent/4.0.11-beta-23225": {
+      "System.Collections.Concurrent/4.0.11-beta-23405": {
         "type": "package",
         "dependencies": {
           "System.Collections": "4.0.10",
@@ -3888,7 +3922,7 @@
         "type": "project",
         "dependencies": {
           "Microsoft.AspNet.Http": "1.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "1.0.0-beta7",
           "System.ComponentModel": "4.0.1-beta",
           "System.Diagnostics.Debug": "4.0.11-beta",
           "System.Diagnostics.Tools": "4.0.1-beta",
@@ -4678,6 +4712,24 @@
         "Microsoft.Dnx.Runtime.Abstractions.nuspec"
       ]
     },
+    "Microsoft.Extensions.DependencyInjection/1.0.0-rc1-15674": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "PNJdMfbhK4DfyIGx3m9FsewEyRPc2p+aeqgk4M9388qriy8cu4+CWTsDqvVggYtrHJf+8sqTv5eZQLdN5kkYeg==",
+      "files": [
+        "lib/dnx451/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/dnx451/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/dnxcore50/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/dnxcore50/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/dotnet/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/dotnet/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/net45/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net45/Microsoft.Extensions.DependencyInjection.xml",
+        "Microsoft.Extensions.DependencyInjection.1.0.0-rc1-15674.nupkg",
+        "Microsoft.Extensions.DependencyInjection.1.0.0-rc1-15674.nupkg.sha512",
+        "Microsoft.Extensions.DependencyInjection.nuspec"
+      ]
+    },
     "Microsoft.Extensions.DependencyInjection.Abstractions/1.0.0-rc1-15674": {
       "type": "package",
       "serviceable": true,
@@ -5284,12 +5336,22 @@
         "System.Collections.nuspec"
       ]
     },
-    "System.Collections.Concurrent/4.0.11-beta-23225": {
+    "System.Collections.Concurrent/4.0.11-beta-23405": {
       "type": "package",
       "serviceable": true,
-      "sha512": "R2TwS/ke/9sQlkG9mNZiepk2IX1/pPjEWeba2oSBRH6BkdUkOc3GVzw1ngPJOsjKP/eL+Pe3WoboeR0ZPB8PJA==",
+      "sha512": "zzWrAgmwdpqzCKnCV9o6zW1E4WMcLzh0DkjgD6BJIGipg+8dyi2hOPQjkao9SlR5FYDhxPiveCPkDJM0d2JvmA==",
       "files": [
+        "lib/dotnet/de/System.Collections.Concurrent.xml",
+        "lib/dotnet/es/System.Collections.Concurrent.xml",
+        "lib/dotnet/fr/System.Collections.Concurrent.xml",
+        "lib/dotnet/it/System.Collections.Concurrent.xml",
+        "lib/dotnet/ja/System.Collections.Concurrent.xml",
+        "lib/dotnet/ko/System.Collections.Concurrent.xml",
+        "lib/dotnet/ru/System.Collections.Concurrent.xml",
         "lib/dotnet/System.Collections.Concurrent.dll",
+        "lib/dotnet/System.Collections.Concurrent.xml",
+        "lib/dotnet/zh-hans/System.Collections.Concurrent.xml",
+        "lib/dotnet/zh-hant/System.Collections.Concurrent.xml",
         "lib/MonoAndroid10/_._",
         "lib/MonoTouch10/_._",
         "lib/net46/_._",
@@ -5301,8 +5363,8 @@
         "ref/net46/_._",
         "ref/xamarinios10/_._",
         "ref/xamarinmac20/_._",
-        "System.Collections.Concurrent.4.0.11-beta-23225.nupkg",
-        "System.Collections.Concurrent.4.0.11-beta-23225.nupkg.sha512",
+        "System.Collections.Concurrent.4.0.11-beta-23405.nupkg",
+        "System.Collections.Concurrent.4.0.11-beta-23405.nupkg.sha512",
         "System.Collections.Concurrent.nuspec"
       ]
     },
@@ -6174,7 +6236,7 @@
     "System.Reflection/4.1.0-beta-23225": {
       "type": "package",
       "serviceable": true,
-      "sha512": "nlguo6AocBKGccv4CFSMCOR2/vU+93u/yvzFKO6ViNJ/SBz2VEZ1nOeW93vqKKpOMJkt3YtTvMWmS+kUGz/1bA==",
+      "sha512": "WbLtaCxoe5XdqEyZuGpemSQ8YBJ8cj11zx+yxOxJfHbNrmu7oMQ29+J50swaqg3soUc3BVBMqfIhb/7gocDHQA==",
       "files": [
         "lib/DNXCore50/System.Reflection.dll",
         "lib/MonoAndroid10/_._",
@@ -7114,6 +7176,7 @@
       "Microsoft.Framework.Logging.Console >= 1.0.0-beta7",
       "Microsoft.Framework.Logging.Debug >= 1.0.0-beta7",
       "Microsoft.VisualStudio.Web.BrowserLink.Loader >= 14.0.0-beta7",
+      "Microsoft.Extensions.DependencyInjection >= 1.0.0-*",
       "Wangkanai.Analytics "
     ],
     "DNX,Version=v4.5.1": [],
