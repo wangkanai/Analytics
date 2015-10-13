@@ -1,4 +1,4 @@
-#[Google Universal Analytics](http://wangkanai.github.io/universalanalytics/)
+#[Google Universal Analytics](http://wangkanai.github.io/analytics/)
 
 ### What is Google Universal Analytics?
 The Google Analytics Platform lets you measure user interactions with your business across various devices and environments.
@@ -11,7 +11,7 @@ This project provide the full source code and build as [NuGet package](https://w
 
 The library include Intellisense to help guide you write server-side code in an effective manner.
 
-![Intellisense](https://raw.githubusercontent.com/wangkanai/universalanalytics/master/Analytics/wiki/Intellisense.png)
+![Intellisense](https://raw.githubusercontent.com/wangkanai/analytics/master/Analytics/wiki/Intellisense.png)
 
 ###How do i contribute?
 Google Analytics is a powerful and continuous improving platform. We would like to invite developers to help maintain and add features so that this library is keep aligned with Google Analytics features. 
@@ -19,4 +19,4 @@ Google Analytics is a powerful and continuous improving platform. We would like 
 ###Sample Application
 We maintain a [demo web application](http://universalanalytics.azurewebsites.net/) to help showcase our libray in real world scenario.  
 
-![mvc showcase](https://raw.githubusercontent.com/wangkanai/universalanalytics/master/Analytics/wiki/Universal-Analytics-Mvc.png)
+![mvc showcase](https://raw.githubusercontent.com/wangkanai/analytics/master/Analytics/wiki/Universal-Analytics-Mvc.png)
