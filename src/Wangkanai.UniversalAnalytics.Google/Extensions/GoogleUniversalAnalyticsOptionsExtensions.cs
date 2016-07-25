@@ -8,7 +8,8 @@ namespace Wangkanai.UniversalAnalytics
     public static class GoogleUniversalAnalyticsOptionsExtensions
     {
         public static UniversalAnalyticsOptionsBuilder UseGoogle(
-            this UniversalAnalyticsOptionsBuilder optionsesBuilder)
+            this UniversalAnalyticsOptionsBuilder optionsesBuilder,
+            string account)
         {
             // waiting for implementation
 

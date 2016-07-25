@@ -7,7 +7,7 @@ namespace Wangkanai.UniversalAnalytics.Infrastructure
 {
     public interface IUniversalAnalyticsOptions
     {
-        IEnumerable<IUniversalAnalyticsOptionsExtensions> Extensions { get; }
-        T FindExtension<T>() where T : class, IUniversalAnalyticsOptionsExtensions;
+        IEnumerable<IUniversalAnalyticsOptionsExtension> Extensions { get; }
+        T FindExtension<T>() where T : class, IUniversalAnalyticsOptionsExtension;
     }
 }

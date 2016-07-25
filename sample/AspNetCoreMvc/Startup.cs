@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Wangkanai.UniversalAnalytics;
 
 namespace AspNetCoreMvc
 {
@@ -30,7 +31,7 @@ namespace AspNetCoreMvc
             // Add framework services.
             services.AddUniversalAnalytics(options =>
             {
-                
+                options.UseGoogle("UA-XXXX-Y");
             });
 
             services.AddMvc();
