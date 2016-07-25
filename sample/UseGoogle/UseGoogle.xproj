@@ -6,8 +6,8 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\DotNet\Microsoft.DotNet.Props" Condition="'$(VSToolsPath)' != ''" />
   <PropertyGroup Label="Globals">
-    <ProjectGuid>7351069e-13d5-43ce-8c10-91585a02ff29</ProjectGuid>
-    <RootNamespace>AspNetCoreMvc</RootNamespace>
+    <ProjectGuid>fe3a627e-2cd7-49d3-9ce7-690fed0f4aea</ProjectGuid>
+    <RootNamespace>UseGoogle</RootNamespace>
     <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)'=='' ">.\obj</BaseIntermediateOutputPath>
     <OutputPath Condition="'$(OutputPath)'=='' ">.\bin\</OutputPath>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>

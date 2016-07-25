@@ -9,7 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Wangkanai.UniversalAnalytics;
 
-namespace AspNetCoreMvc
+namespace UseGoogle
 {
     public class Startup
     {
@@ -33,7 +33,6 @@ namespace AspNetCoreMvc
             {
                 options.UseGoogle("UA-XXXX-Y");
             });
-
             services.AddMvc();
         }
 
