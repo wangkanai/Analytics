@@ -1,5 +1,5 @@
 ﻿using System;
-using UniversalAnalytics;
+using Wangkanai.UniversalAnalytics;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
@@ -7,7 +7,7 @@ namespace Microsoft.Extensions.DependencyInjection
     {
         public static IServiceCollection AddUniversalAnalytics(
             this IServiceCollection serviceCollection,
-            Action<UniversalAnalyticsOptionBuilder> optionActions)
+            Action<UniversalAnalyticsOptionsBuilder> optionActions)
         {
             return serviceCollection;
         }

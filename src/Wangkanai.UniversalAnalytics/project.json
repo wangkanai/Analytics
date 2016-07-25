@@ -1,0 +1,14 @@
+{
+  "version": "2.0.0-*",
+  "description": "Universal Analytics is C#.NET lightweight server-side code generator to client side libraryn\r\n\r\nCommonly Used Types:\r\n",
+
+  "dependencies": {
+    "Microsoft.AspNetCore.Http.Abstractions": "1.0.0",
+    "Microsoft.Extensions.DependencyInjection": "1.0.0"
+  },
+
+  "frameworks": {
+    "netstandard1.3": {
+    }
+  }
+}
