@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Wangkanai.UniversalAnalytics.Infrastructure;
 
-namespace Wangkanai.UniversalAnalytics
+namespace Microsoft.Extensions.DependencyInjection
 {
     public class AnalyticsOptionsBuilder : IAnalyticsOptionsBuilderInfrastructure
     {

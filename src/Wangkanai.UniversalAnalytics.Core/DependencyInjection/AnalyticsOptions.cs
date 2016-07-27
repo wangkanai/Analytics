@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Wangkanai.UniversalAnalytics.Infrastructure;
 
-namespace Wangkanai.UniversalAnalytics
+namespace Microsoft.Extensions.DependencyInjection
 {
     public class AnalyticsOptions : IAnalyticsOptions
     {

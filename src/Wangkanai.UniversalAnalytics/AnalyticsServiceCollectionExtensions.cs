@@ -1,28 +1,27 @@
 ﻿using System;
-using Wangkanai.UniversalAnalytics;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
+    /// <summary>
+    /// Extension method for setting up Universal in an <see cref="IServiceCollection" />
+    /// </summary>
     public static class AnalyticsServiceCollectionExtensions
     {
-        public static IServiceCollection AddUniversalAnalytics(this IServiceCollection serviceCollection,
+        public static IServiceCollection AddUniversalAnalytics(
+            this IServiceCollection serviceCollection,
             string accountNumber)
-        {
-            if(serviceCollection == null) throw new ArgumentNullException();
-            if(accountNumber == null) throw new ArgumentNullException();
+            => AddUniversalAnalytics(serviceCollection, accountNumber, null);
 
-            // waiting to implement features
 
-            return serviceCollection;
-        }
-
-        public static IServiceCollection AddUniversalAnalytics(this IServiceCollection serviceCollection,
+        public static IServiceCollection AddUniversalAnalytics(
+            this IServiceCollection serviceCollection,
+            string accountNumber,
             Action<AnalyticsOptionsBuilder> optionActions)
         {
-            if(serviceCollection == null) throw new ArgumentNullException();
-            if(optionActions == null) throw new ArgumentNullException();
+            if (serviceCollection == null) throw new ArgumentNullException(nameof(serviceCollection));
+            if (accountNumber == null) throw new ArgumentNullException(nameof(accountNumber));
 
-            // waiting to implement features
+            serviceCollection.AddSingleton<AnalyticsOptions>();
 
             return serviceCollection;
         }
