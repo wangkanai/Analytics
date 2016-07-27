@@ -2,6 +2,9 @@
 // The MIT License (MIT). See License.txt in the project root for license information.
 
 using System;
+using Wangkanai.UniversalAnalytics;
+using Wangkanai.UniversalAnalytics.Core.Applications;
+using Wangkanai.UniversalAnalytics.Core.Builder;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
@@ -11,7 +14,7 @@ namespace Microsoft.Extensions.DependencyInjection
     public static class AnalyticsServiceCollectionExtensions
     {
         /// <summary>
-        ///     Registers the Universal Analytics as a service in the <see cref="IServiceCollection" />.
+        ///     Registers the Universal Analytics as a services in the <see cref="IServiceCollection" />.
         ///     You use this method when using dependency injection in your application, such as with ASP.NET.
         /// </summary>
         /// <example>
@@ -24,26 +27,26 @@ namespace Microsoft.Extensions.DependencyInjection
         ///        }
         ///    </code>
         /// </example>
-        /// <param name="service">The <see cref="IServiceCollection" /> to add services to. </param>
+        /// <param name="services">The <see cref="IServiceCollection" /> to add services to. </param>
         /// <param name="trackerId">The tracking ID / web property ID. The format is UA-XXXX-Y. All collected data is associated by this ID.</param>
-        /// <returns></returns>
-        public static IServiceCollection AddUniversalAnalytics(
-                this IServiceCollection service,
+        /// <returns>An <see cref="IServiceCollection"/> that can be used to further configure the MVC services.</returns>
+        public static IAnalyticsBuilder AddUniversalAnalytics(
+                this IServiceCollection services,
                 string trackerId)
-                => AddUniversalAnalytics(service, trackerId, null);
+                => AddUniversalAnalytics(services, trackerId, null);
 
 
-        public static IServiceCollection AddUniversalAnalytics(
-            this IServiceCollection service,
+        public static IAnalyticsBuilder AddUniversalAnalytics(
+            this IServiceCollection services,
             string trackerId,
             Action<AnalyticsOptionsBuilder> options)
         {
-            if (service == null) throw new ArgumentNullException(nameof(service));
+            if (services == null) throw new ArgumentNullException(nameof(services));
             if (trackerId == null) throw new ArgumentNullException(nameof(trackerId));
 
-            service.AddSingleton<AnalyticsOptions>();
+            var manager = new AnalyticsManager();// GetAnalyticsManager(services);
 
-            return service;
+            return new AnalyticsBuilder(services, manager);
         }
     }
 }
