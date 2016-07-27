@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 // associated with an assembly.
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Wangkanai.UniversalAnalytics.Google")]
+[assembly: AssemblyProduct("Wangkanai.UniversalAnalytics.Core")]
 [assembly: AssemblyTrademark("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible
@@ -16,4 +16,4 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("58dcef4a-b4f4-4b4e-88bf-f207d36081ef")]
+[assembly: Guid("4ab32f7d-2b7a-459c-89d6-9c8512e0ed2c")]

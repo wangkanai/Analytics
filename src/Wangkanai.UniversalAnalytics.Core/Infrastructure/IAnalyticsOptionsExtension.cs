@@ -2,7 +2,7 @@
 
 namespace Wangkanai.UniversalAnalytics.Infrastructure
 {
-    public interface IUniversalAnalyticsOptionsExtension
+    public interface IAnalyticsOptionsExtension
     {
         void ApplyServices(IServiceCollection services);
     }

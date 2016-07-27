@@ -538,6 +538,20 @@
         "compile": {
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
+      },
+      "Wangkanai.UniversalAnalytics.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v1.3",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Abstractions": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection": "1.0.0"
+        },
+        "compile": {
+          "netstandard1.3/Wangkanai.UniversalAnalytics.Core.dll": {}
+        },
+        "runtime": {
+          "netstandard1.3/Wangkanai.UniversalAnalytics.Core.dll": {}
+        }
       }
     }
   },
@@ -2467,12 +2481,18 @@
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._"
       ]
+    },
+    "Wangkanai.UniversalAnalytics.Core/1.0.0": {
+      "type": "project",
+      "path": "../Wangkanai.UniversalAnalytics.Core/project.json",
+      "msbuildProject": "../Wangkanai.UniversalAnalytics.Core/Wangkanai.UniversalAnalytics.Core.xproj"
     }
   },
   "projectFileDependencyGroups": {
     "": [
       "Microsoft.AspNetCore.Http.Abstractions >= 1.0.0",
-      "Microsoft.Extensions.DependencyInjection >= 1.0.0"
+      "Microsoft.Extensions.DependencyInjection >= 1.0.0",
+      "Wangkanai.UniversalAnalytics.Core >= 1.0.0-*"
     ],
     ".NETStandard,Version=v1.3": []
   },
