@@ -3413,7 +3413,8 @@
         "framework": ".NETStandard,Version=v1.6",
         "dependencies": {
           "Microsoft.AspNetCore.Http.Abstractions": "1.0.0",
-          "Microsoft.Extensions.DependencyInjection": "1.0.0"
+          "Microsoft.Extensions.DependencyInjection": "1.0.0",
+          "Wangkanai.UniversalAnalytics.Tracker": "1.0.0"
         },
         "compile": {
           "netstandard1.6/Wangkanai.UniversalAnalytics.Core.dll": {}
@@ -3434,6 +3435,19 @@
         },
         "runtime": {
           "netstandard1.6/Wangkanai.UniversalAnalytics.Plugins.Ecommerce.dll": {}
+        }
+      },
+      "Wangkanai.UniversalAnalytics.Tracker/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v1.6",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http": "1.0.0"
+        },
+        "compile": {
+          "netstandard1.6/Wangkanai.UniversalAnalytics.Tracker.dll": {}
+        },
+        "runtime": {
+          "netstandard1.6/Wangkanai.UniversalAnalytics.Tracker.dll": {}
         }
       }
     }
@@ -9201,6 +9215,11 @@
       "type": "project",
       "path": "../../src/Wangkanai.UniversalAnalytics.Plugins.Ecommerce/project.json",
       "msbuildProject": "../../src/Wangkanai.UniversalAnalytics.Plugins.Ecommerce/Wangkanai.UniversalAnalytics.Plugins.Ecommerce.xproj"
+    },
+    "Wangkanai.UniversalAnalytics.Tracker/1.0.0": {
+      "type": "project",
+      "path": "../../src/Wangkanai.UniversalAnalytics.Tracker/project.json",
+      "msbuildProject": "../../src/Wangkanai.UniversalAnalytics.Tracker/Wangkanai.UniversalAnalytics.Tracker.xproj"
     }
   },
   "projectFileDependencyGroups": {
