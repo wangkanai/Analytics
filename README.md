@@ -1,4 +1,4 @@
-## [Universal Analytics](http://wangkanai.github.io/analytics/)
+## [Universal Analytics](http://analytics.wangkanai.org/)
 
 [![Build status](https://ci.appveyor.com/api/projects/status/t46adtm386rxiqam?svg=true)](https://ci.appveyor.com/project/wangkanai/analytics)
 
