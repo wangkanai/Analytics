@@ -23,7 +23,7 @@ namespace AnalyticsSandbox
             services.AddMvc();
 
             // Add application services.
-            services.AddUniversalAnalytics("UA-XXXX-Y")
+            services.AddUniversalAnalytics()
                 .AddEcommerce();
         }
 

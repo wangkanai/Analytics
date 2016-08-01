@@ -76,23 +76,6 @@
           "lib/netstandard1.3/Microsoft.AspNetCore.WebUtilities.dll": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection/1.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "1.0.0",
-          "System.Collections": "4.0.11",
-          "System.Collections.Concurrent": "4.0.12",
-          "System.Runtime.Extensions": "4.1.0",
-          "System.Threading": "4.0.11",
-          "System.Threading.Tasks": "4.0.11"
-        },
-        "compile": {
-          "lib/netstandard1.1/Microsoft.Extensions.DependencyInjection.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.1/Microsoft.Extensions.DependencyInjection.dll": {}
-        }
-      },
       "Microsoft.Extensions.DependencyInjection.Abstractions/1.0.0": {
         "type": "package",
         "dependencies": {
@@ -290,7 +273,7 @@
           "System.Threading.Tasks": "4.0.11"
         },
         "compile": {
-          "ref/netstandard1.3/System.Collections.Concurrent.dll": {}
+          "ref/netstandard1.3/_._": {}
         },
         "runtime": {
           "lib/netstandard1.3/System.Collections.Concurrent.dll": {}
@@ -979,19 +962,6 @@
         "compile": {
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
-      },
-      "Wangkanai.UniversalAnalytics.Tracker/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v1.6",
-        "dependencies": {
-          "Microsoft.AspNetCore.Http": "1.0.0"
-        },
-        "compile": {
-          "netstandard1.6/Wangkanai.UniversalAnalytics.Tracker.dll": {}
-        },
-        "runtime": {
-          "netstandard1.6/Wangkanai.UniversalAnalytics.Tracker.dll": {}
-        }
       }
     }
   },
@@ -1046,17 +1016,6 @@
         "lib/net451/Microsoft.AspNetCore.WebUtilities.xml",
         "lib/netstandard1.3/Microsoft.AspNetCore.WebUtilities.dll",
         "lib/netstandard1.3/Microsoft.AspNetCore.WebUtilities.xml"
-      ]
-    },
-    "Microsoft.Extensions.DependencyInjection/1.0.0": {
-      "sha512": "zdtkiZNV6LB8xtpmfyUjP/9N9ZCL/ydQ+0bfjun38fbrk+MDEm9M2yeLzRdq+OIt5xExw/KU04wFaVwJ1bhQPg==",
-      "type": "package",
-      "path": "Microsoft.Extensions.DependencyInjection/1.0.0",
-      "files": [
-        "Microsoft.Extensions.DependencyInjection.1.0.0.nupkg.sha512",
-        "Microsoft.Extensions.DependencyInjection.nuspec",
-        "lib/netstandard1.1/Microsoft.Extensions.DependencyInjection.dll",
-        "lib/netstandard1.1/Microsoft.Extensions.DependencyInjection.xml"
       ]
     },
     "Microsoft.Extensions.DependencyInjection.Abstractions/1.0.0": {
@@ -3526,18 +3485,11 @@
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._"
       ]
-    },
-    "Wangkanai.UniversalAnalytics.Tracker/1.0.0": {
-      "type": "project",
-      "path": "../Wangkanai.UniversalAnalytics.Tracker/project.json",
-      "msbuildProject": "../Wangkanai.UniversalAnalytics.Tracker/Wangkanai.UniversalAnalytics.Tracker.xproj"
     }
   },
   "projectFileDependencyGroups": {
     "": [
-      "Microsoft.AspNetCore.Http.Abstractions >= 1.0.0",
-      "Microsoft.Extensions.DependencyInjection >= 1.0.0",
-      "Wangkanai.UniversalAnalytics.Tracker >= 1.0.0-*"
+      "Microsoft.AspNetCore.Http >= 1.0.0"
     ],
     ".NETStandard,Version=v1.6": []
   },

@@ -1,5 +1,4 @@
-#:D:\Sources\Analytics\sample\AnalyticsEcommerceEnhanced\EcommerceEnhanced.xproj
-D:\Sources\Analytics\sample\AnalyticsEcommerceEnhanced\EcommerceEnhanced.xproj|D:\Sources\Analytics\src\Wangkanai.UniversalAnalytics\Wangkanai.UniversalAnalytics.xproj
-D:\Sources\Analytics\sample\AnalyticsEcommerceEnhanced\EcommerceEnhanced.xproj|D:\Sources\Analytics\src\Wangkanai.UniversalAnalytics.Plugins.EcommerceEnhanced\Wangkanai.UniversalAnalytics.Plugins.EcommerceEnhanced.xproj
+#:D:\Sources\Analytics\test\Wangkanai.UniversalAnalytics.Test\Wangkanai.UniversalAnalytics.Test.xproj
+D:\Sources\Analytics\test\Wangkanai.UniversalAnalytics.Test\Wangkanai.UniversalAnalytics.Test.xproj|D:\Sources\Analytics\src\Wangkanai.UniversalAnalytics\Wangkanai.UniversalAnalytics.xproj
 D:\Sources\Analytics\src\Wangkanai.UniversalAnalytics\Wangkanai.UniversalAnalytics.xproj|D:\Sources\Analytics\src\Wangkanai.UniversalAnalytics.Core\Wangkanai.UniversalAnalytics.Core.xproj
-D:\Sources\Analytics\src\Wangkanai.UniversalAnalytics.Plugins.EcommerceEnhanced\Wangkanai.UniversalAnalytics.Plugins.EcommerceEnhanced.xproj|D:\Sources\Analytics\src\Wangkanai.UniversalAnalytics.Core\Wangkanai.UniversalAnalytics.Core.xproj
+D:\Sources\Analytics\src\Wangkanai.UniversalAnalytics.Core\Wangkanai.UniversalAnalytics.Core.xproj|D:\Sources\Analytics\src\Wangkanai.UniversalAnalytics.Tracker\Wangkanai.UniversalAnalytics.Tracker.xproj

@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Wangkanai.UniversalAnalytics.Core.Builder;
 
 namespace AnalyticsSandbox
 {
@@ -23,10 +24,8 @@ namespace AnalyticsSandbox
             services.AddMvc();
 
             // Add application services.
-            services.AddUniversalAnalytics("UA-XXXX-Y")
+            services.AddUniversalAnalytics()
                 .AddDisplayFeatures()
-                .AddEcommerce()
-                .AddEcommerceEnhanced()
                 .AddLinkAttribution()
                 .AddLinker();
         }
@@ -40,6 +39,12 @@ namespace AnalyticsSandbox
             }
             app.UseStaticFiles();
             loggerFactory.AddConsole();
+
+            app.UseUniversalAnalytics("UA-XXXX-Y");
+            app.UseUniversalAnalytics(trackers =>
+            {
+                trackers.AddTracker("UA-XXXX-Y");
+            });              
 
             app.UseMvc(routes =>
             {

@@ -20,29 +20,25 @@ namespace Microsoft.Extensions.DependencyInjection
         /// <example>
         ///    <code> 
         ///        public void ConfigureServices(IServiceCollection services)
-        ///        {            
-        ///            services.AddUniversalAnalytics("UA-XXXX-Y");
-        ///         
+        ///        {                            
         ///            services.AddMvc();
+        /// 
+        ///            services.AddUniversalAnalytics();
         ///        }
         ///    </code>
         /// </example>
-        /// <param name="services">The <see cref="IServiceCollection" /> to add services to. </param>
-        /// <param name="trackerId">The tracking ID / web property ID. The format is UA-XXXX-Y. All collected data is associated by this ID.</param>
-        /// <returns>An <see cref="IServiceCollection"/> that can be used to further configure the MVC services.</returns>
+        /// <param name="services">The <see cref="IServiceCollection" /> to add services to. </param>        
+        /// <returns>An <see cref="IAnalyticsBuilder"/> that can be used to further configure the MVC services.</returns>
         public static IAnalyticsBuilder AddUniversalAnalytics(
-                this IServiceCollection services,
-                string trackerId)
-                => AddUniversalAnalytics(services, trackerId, null);
+                this IServiceCollection services)
+                => AddUniversalAnalytics(services, null);
 
 
         public static IAnalyticsBuilder AddUniversalAnalytics(
-            this IServiceCollection services,
-            string trackerId,
+            this IServiceCollection services,            
             Action<AnalyticsOptionsBuilder> options)
         {
-            if (services == null) throw new ArgumentNullException(nameof(services));
-            if (trackerId == null) throw new ArgumentNullException(nameof(trackerId));
+            if (services == null) throw new ArgumentNullException(nameof(services));            
 
             var manager = new AnalyticsManager();// GetAnalyticsManager(services);
 
