@@ -1,6 +1,7 @@
 ## [Wangkanai Analytics](http://analytics.wangkanai.org/)
 
-[![Build status](https://ci.appveyor.com/api/projects/status/t46adtm386rxiqam?svg=true)](https://ci.appveyor.com/project/wangkanai/analytics)
+[![Build status](https://ci.appveyor.com/api/projects/status/t46adtm386rxiqam?svg=true)](https://ci.appveyor.com/project/wangkanai/analytics) 
+[![NuGet Pre Release](https://img.shields.io/nuget/vpre/Wangkanai.Analytics.svg?maxAge=3600)](https://www.nuget.org/packages/Wangkanai.Analytics/) |
 
 ### What is Wangkanai Analytics?
 Wangkanai Analytics is a [.NET Core](https://dotnet.github.io/) lightweight server-side code that generator library that JavaScript client-side on the fly for [Google Analytics **analytics.js**](https://developers.google.com/analytics/devguides/collection/analyticsjs/). The goal of the framework is to stay out of the way as much as possible and provide a super interaction with Google all from C#.
