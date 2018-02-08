@@ -5,6 +5,12 @@
 ### What is Wangkanai Analytics?
 Wangkanai Analytics is a [.NET Core](https://dotnet.github.io/) lightweight server-side code that generator library that JavaScript client-side on the fly for [Google Analytics **analytics.js**](https://developers.google.com/analytics/devguides/collection/analyticsjs/). The goal of the framework is to stay out of the way as much as possible and provide a super interaction with Google all from C#.
 
+### Installation
+
+```
+PM> install-package Wangkanai.Analytics -pre
+```
+
 Write your application
 
 ```csharp
