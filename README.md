@@ -19,7 +19,9 @@ public void ConfigureServices(IServiceCollection services)
 ```
 
 #### Using IntelliSense
+
 ![AddAnalytics IntelliSense](wiki/images/AddAnalytics-Intellisense.png)
+
 ![AddAnalytics TrackerId](wiki/images/AddAnalytics-trackerId.png)
 
 #### Official Plugins extensions
