@@ -1,46 +1,45 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1FE89F5A-C5E2-4582-AF75-A2893954F998}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5105FE8C-3240-4E1D-A8BC-8068BECDB263}"
 	ProjectSection(SolutionItems) = preProject
-		global.json = global.json
 		LICENSE = LICENSE
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Wangkanai.UniversalAnalytics", "src\Wangkanai.UniversalAnalytics\Wangkanai.UniversalAnalytics.xproj", "{57F038C9-97B1-42D4-BC65-36485DB14C74}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{63CF70CF-C922-4FBD-9DAD-10373F279C13}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Wangkanai.UniversalAnalytics.Core", "src\Wangkanai.UniversalAnalytics.Core\Wangkanai.UniversalAnalytics.Core.xproj", "{4AB32F7D-2B7A-459C-89D6-9C8512E0ED2C}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Wangkanai.UniversalAnalytics.Plugins.DisplayFeatures", "src\Wangkanai.UniversalAnalytics.Plugins.DisplayFeatures\Wangkanai.UniversalAnalytics.Plugins.DisplayFeatures.xproj", "{7D1838D7-5171-44E3-B0AF-CF37396BC918}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Wangkanai.UniversalAnalytics.Plugins.Ecommerce", "src\Wangkanai.UniversalAnalytics.Plugins.Ecommerce\Wangkanai.UniversalAnalytics.Plugins.Ecommerce.xproj", "{77BC29E2-1237-42D4-AAC7-B8DDECFA5F1B}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Wangkanai.UniversalAnalytics.Plugins.Linker", "src\Wangkanai.UniversalAnalytics.Plugins.Linker\Wangkanai.UniversalAnalytics.Plugins.Linker.xproj", "{45699283-53C1-47FB-8D08-6A6965FF7E0F}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Wangkanai.UniversalAnalytics.Plugins.EcommerceEnhanced", "src\Wangkanai.UniversalAnalytics.Plugins.EcommerceEnhanced\Wangkanai.UniversalAnalytics.Plugins.EcommerceEnhanced.xproj", "{7915AF81-D970-4DA6-9FDE-D7C2B4DAFE47}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Wangkanai.UniversalAnalytics.Plugins.LinkAttribution", "src\Wangkanai.UniversalAnalytics.Plugins.LinkAttribution\Wangkanai.UniversalAnalytics.Plugins.LinkAttribution.xproj", "{9A8F4221-6BF1-4F07-AD83-6ABD07D78065}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "AnalyticsSandbox", "sample\AnalyticsSandbox\AnalyticsSandbox.xproj", "{43890264-4483-4BAC-87D7-9BB685F49B45}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "EcommerceSandbox", "sample\EcommerceSandbox\EcommerceSandbox.xproj", "{0FD3D58A-9037-45F6-A4BF-37FC26B61C3B}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "EcommerceEnhanced", "sample\EcommerceEnhanced\EcommerceEnhanced.xproj", "{B48D20BD-9A38-4613-8B22-BAA5F4DF81ED}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Wangkanai.UniversalAnalytics.Tracker", "src\Wangkanai.UniversalAnalytics.Tracker\Wangkanai.UniversalAnalytics.Tracker.xproj", "{2108E163-424A-4868-AC6D-66B706811334}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{3E65A8C8-C648-4019-BB4D-5D60E339C474}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Wangkanai.UniversalAnalytics.Core.Test", "test\Wangkanai.UniversalAnalytics.Core.Test\Wangkanai.UniversalAnalytics.Core.Test.xproj", "{505D7DC5-1314-4B47-8383-EAD6447C5B38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.UniversalAnalytics", "src\Wangkanai.UniversalAnalytics\Wangkanai.UniversalAnalytics.csproj", "{57F038C9-97B1-42D4-BC65-36485DB14C74}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Wangkanai.UniversalAnalytics.Test", "test\Wangkanai.UniversalAnalytics.Test\Wangkanai.UniversalAnalytics.Test.xproj", "{62638908-9E41-4911-806D-B73D758CBD6F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.UniversalAnalytics.Core", "src\Wangkanai.UniversalAnalytics.Core\Wangkanai.UniversalAnalytics.Core.csproj", "{4AB32F7D-2B7A-459C-89D6-9C8512E0ED2C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.UniversalAnalytics.Plugins.DisplayFeatures", "src\Wangkanai.UniversalAnalytics.Plugins.DisplayFeatures\Wangkanai.UniversalAnalytics.Plugins.DisplayFeatures.csproj", "{7D1838D7-5171-44E3-B0AF-CF37396BC918}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.UniversalAnalytics.Plugins.Ecommerce", "src\Wangkanai.UniversalAnalytics.Plugins.Ecommerce\Wangkanai.UniversalAnalytics.Plugins.Ecommerce.csproj", "{77BC29E2-1237-42D4-AAC7-B8DDECFA5F1B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.UniversalAnalytics.Plugins.Linker", "src\Wangkanai.UniversalAnalytics.Plugins.Linker\Wangkanai.UniversalAnalytics.Plugins.Linker.csproj", "{45699283-53C1-47FB-8D08-6A6965FF7E0F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.UniversalAnalytics.Plugins.EcommerceEnhanced", "src\Wangkanai.UniversalAnalytics.Plugins.EcommerceEnhanced\Wangkanai.UniversalAnalytics.Plugins.EcommerceEnhanced.csproj", "{7915AF81-D970-4DA6-9FDE-D7C2B4DAFE47}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.UniversalAnalytics.Plugins.LinkAttribution", "src\Wangkanai.UniversalAnalytics.Plugins.LinkAttribution\Wangkanai.UniversalAnalytics.Plugins.LinkAttribution.csproj", "{9A8F4221-6BF1-4F07-AD83-6ABD07D78065}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnalyticsSandbox", "sample\AnalyticsSandbox\AnalyticsSandbox.csproj", "{43890264-4483-4BAC-87D7-9BB685F49B45}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EcommerceSandbox", "sample\EcommerceSandbox\EcommerceSandbox.csproj", "{0FD3D58A-9037-45F6-A4BF-37FC26B61C3B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EcommerceEnhanced", "sample\EcommerceEnhanced\EcommerceEnhanced.csproj", "{B48D20BD-9A38-4613-8B22-BAA5F4DF81ED}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.UniversalAnalytics.Tracker", "src\Wangkanai.UniversalAnalytics.Tracker\Wangkanai.UniversalAnalytics.Tracker.csproj", "{2108E163-424A-4868-AC6D-66B706811334}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.UniversalAnalytics.Core.Test", "test\Wangkanai.UniversalAnalytics.Core.Test\Wangkanai.UniversalAnalytics.Core.Test.csproj", "{505D7DC5-1314-4B47-8383-EAD6447C5B38}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.UniversalAnalytics.Test", "test\Wangkanai.UniversalAnalytics.Test\Wangkanai.UniversalAnalytics.Test.csproj", "{62638908-9E41-4911-806D-B73D758CBD6F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -118,5 +117,8 @@ Global
 		{2108E163-424A-4868-AC6D-66B706811334} = {1FE89F5A-C5E2-4582-AF75-A2893954F998}
 		{505D7DC5-1314-4B47-8383-EAD6447C5B38} = {3E65A8C8-C648-4019-BB4D-5D60E339C474}
 		{62638908-9E41-4911-806D-B73D758CBD6F} = {3E65A8C8-C648-4019-BB4D-5D60E339C474}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D9EF9F97-B7BA-49FB-8532-47851C700F8A}
 	EndGlobalSection
 EndGlobal
