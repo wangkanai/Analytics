@@ -7,7 +7,14 @@ branches:
     - dev
     - /^(.*\/)?ci-.*$/
 build_script:
-  - build.cmd --quiet verify
+  - ps: .\run.ps1 default-build
 clone_depth: 1
+environment:
+  global:
+    DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
+    DOTNET_CLI_TELEMETRY_OPTOUT: 1
 test: off
+artifacts:
+  - path: '**\*.nupkg'
 deploy: off
+os: Visual Studio 2017
