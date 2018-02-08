@@ -7,20 +7,22 @@ Wangkanai Analytics is a [.NET Core](https://dotnet.github.io/) lightweight serv
 
 ### Installation
 
+Add the NuGet package to your project.
+
 ```
 PM> install-package Wangkanai.Analytics -pre
 ```
 
-Write your application
+Add the service to your web app.
 
 ```csharp
 public void ConfigureServices(IServiceCollection services)
 {
-    // Add framework services.
-    services.AddMvc();
-
     // Add application services.
     services.AddAnalytics("UA-XXXX-Y");
+
+    // Add framework services.
+    services.AddMvc();    
 }
 ```
 
@@ -37,38 +39,38 @@ public void ConfigureServices(IServiceCollection services)
 ```csharp
 public void ConfigureServices(IServiceCollection services)
 {
-    // Add framework services.
-    services.AddMvc();
-
     // Add application services.
     services.AddAnalytics("UA-XXXX-Y")
         .AddDisplayFeatures()
         .AddLinkAttribution()
-        .AddLinker();        
+        .AddLinker(); 
+
+    // Add framework services.
+    services.AddMvc();       
 }
 ```
 - [Ecommerce](https://developers.google.com/analytics/devguides/collection/analyticsjs/ecommerce)
 ```csharp
 public void ConfigureServices(IServiceCollection services)
 {
-    // Add framework services.
-    services.AddMvc();
-
     // Add application services.
     services.AddAnalytics("UA-XXXX-Y")
         .AddEcommerce();        
+
+    // Add framework services.
+    services.AddMvc();
 }
 ```
 - [Enhanced Ecommerce](https://developers.google.com/analytics/devguides/collection/analyticsjs/enhanced-ecommerce)
 ```csharp
 public void ConfigureServices(IServiceCollection services)
 {
-    // Add framework services.
-    services.AddMvc();
-
     // Add application services.
     services.AddAnalytics("UA-XXXX-Y")
-        .AddEcommerceEnhanced();        
+        .AddEcommerceEnhanced(); 
+
+    // Add framework services.
+    services.AddMvc();       
 }
 ```
 
