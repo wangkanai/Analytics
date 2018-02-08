@@ -16,17 +16,15 @@ namespace Wangkanai.Analytics.Core.Builder
     public static class AnalyticsBuilderExtensions
     {
 
-        public static IApplicationBuilder UseAnalytics(this IApplicationBuilder app,
-            string TrackerId)
+        public static IApplicationBuilder UseAnalytics(this IApplicationBuilder app, string TrackerId)
         {
             return app.UseAnalytics(trackers =>
             {
-                
+
             });
         }
 
-        public static IApplicationBuilder UseAnalytics(this IApplicationBuilder app,
-            Action<ITrackerBuilder> trackers)
+        public static IApplicationBuilder UseAnalytics(this IApplicationBuilder app, Action<ITrackerBuilder> trackers)
         {
             if (app == null) throw new ArgumentNullException(nameof(app));
             if (trackers == null) throw new ArgumentNullException(nameof(trackers));

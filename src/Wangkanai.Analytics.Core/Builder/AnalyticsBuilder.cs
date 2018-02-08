@@ -19,6 +19,6 @@ namespace Wangkanai.Analytics.Core.Builder
 
             Services = services;
             Manager = manager;
-        }        
+        }
     }
 }

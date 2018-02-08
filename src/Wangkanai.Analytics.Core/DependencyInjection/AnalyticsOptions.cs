@@ -20,7 +20,7 @@ namespace Microsoft.Extensions.DependencyInjection
         public AnalyticsOptions(
             IReadOnlyDictionary<Type, IAnalyticsOptionsExtension> extensions)
         {
-            if (extensions == null) throw new ArgumentNullException();            
+            if (extensions == null) throw new ArgumentNullException();
 
             _extensions = extensions;
         }
@@ -35,10 +35,10 @@ namespace Microsoft.Extensions.DependencyInjection
             return _extensions.TryGetValue(typeof(T), out extension) ? (T)extension : null;
         }
 
-        public AnalyticsOptions WithExtension<T>(T extension) 
+        public AnalyticsOptions WithExtension<T>(T extension)
             where T : class, IAnalyticsOptionsExtension
         {
-            if (extension == null) throw new ArgumentNullException();            
+            if (extension == null) throw new ArgumentNullException();
 
             var extensions = Extensions.ToDictionary(p => p.GetType(), p => p);
             extensions[typeof(T)] = extension;

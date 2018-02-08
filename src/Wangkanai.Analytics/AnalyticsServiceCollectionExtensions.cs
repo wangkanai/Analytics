@@ -18,27 +18,23 @@ namespace Microsoft.Extensions.DependencyInjection
         ///     You use this method when using dependency injection in your application, such as with ASP.NET.
         /// </summary>
         /// <example>
-        ///    <code> 
+        ///    <code>
         ///        public void ConfigureServices(IServiceCollection services)
-        ///        {                            
+        ///        {
         ///            services.AddMvc();
-        /// 
+        ///
         ///            services.AddAnalytics();
         ///        }
         ///    </code>
         /// </example>
-        /// <param name="services">The <see cref="IServiceCollection" /> to add services to. </param>        
+        /// <param name="services">The <see cref="IServiceCollection" /> to add services to. </param>
         /// <returns>An <see cref="IAnalyticsBuilder"/> that can be used to further configure the MVC services.</returns>
-        public static IAnalyticsBuilder AddAnalytics(
-                this IServiceCollection services)
-                => AddAnalytics(services, null);
+        public static IAnalyticsBuilder AddAnalytics(this IServiceCollection services)
+            => AddAnalytics(services, null);
 
-
-        public static IAnalyticsBuilder AddAnalytics(
-            this IServiceCollection services,            
-            Action<AnalyticsOptionsBuilder> options)
+        public static IAnalyticsBuilder AddAnalytics(this IServiceCollection services, Action<AnalyticsOptionsBuilder> options)
         {
-            if (services == null) throw new ArgumentNullException(nameof(services));            
+            if (services == null) throw new ArgumentNullException(nameof(services));
 
             var manager = new AnalyticsManager();// GetAnalyticsManager(services);
 

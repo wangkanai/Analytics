@@ -16,12 +16,12 @@ namespace Microsoft.Extensions.DependencyInjection
         public AnalyticsOptionsBuilder()
             : this(new AnalyticsOptions())
         {
-            
+
         }
 
         public AnalyticsOptionsBuilder(AnalyticsOptions options)
         {
-            if(options == null) throw new ArgumentNullException();            
+            if(options == null) throw new ArgumentNullException();
 
             _options = options;
         }
@@ -31,7 +31,7 @@ namespace Microsoft.Extensions.DependencyInjection
         void IAnalyticsOptionsBuilderInfrastructure.AddOrUpdateExtension<T>(T extension)
         {
             if(extension == null) throw new ArgumentNullException();
-            
+
             _options = _options.WithExtension(extension);
         }
     }
