@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Wangkanai.Analytics.Plugins.EcommerceEnhanced</AssemblyName>
+    <PackageId>Wangkanai.Analytics.Plugins.EcommerceEnhanced</PackageId>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Wangkanai.Analytics.Core\Wangkanai.Analytics.Core.csproj" />
+  </ItemGroup>
+
+</Project>

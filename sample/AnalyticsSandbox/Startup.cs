@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Wangkanai.UniversalAnalytics.Core.Builder;
+using Wangkanai.Analytics.Core.Builder;
 
 namespace AnalyticsSandbox
 {
@@ -19,12 +19,12 @@ namespace AnalyticsSandbox
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit http://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
-        {            
+        {
             // Add framework services.
             services.AddMvc();
 
             // Add application services.
-            services.AddUniversalAnalytics()
+            services.AddAnalytics()
                 .AddDisplayFeatures()
                 .AddLinkAttribution()
                 .AddLinker();
@@ -40,11 +40,11 @@ namespace AnalyticsSandbox
             app.UseStaticFiles();
             loggerFactory.AddConsole();
 
-            app.UseUniversalAnalytics("UA-XXXX-Y");
-            app.UseUniversalAnalytics(trackers =>
+            app.UseAnalytics("UA-XXXX-Y");
+            app.UseAnalytics(trackers =>
             {
                 trackers.AddTracker("UA-XXXX-Y");
-            });              
+            });
 
             app.UseMvc(routes =>
             {

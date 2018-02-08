@@ -23,7 +23,7 @@ namespace AnalyticsSandbox
             services.AddMvc();
 
             // Add application services.
-            services.AddUniversalAnalytics()
+            services.AddAnalytics()
                 .AddEcommerceEnhanced();
         }
 

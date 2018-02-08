@@ -14,13 +14,13 @@ public void ConfigureServices(IServiceCollection services)
     services.AddMvc();
 
     // Add application services.
-    services.AddUniversalAnalytics("UA-XXXX-Y");
+    services.AddAnalytics("UA-XXXX-Y");
 }
 ```
 
 #### Using IntelliSense
-![AddUniversalAnalytics IntelliSense](wiki/images/AddUniversalAnalytics-Intellisense.png)
-![AddUniversalAnalytics TrackerId](wiki/images/AddUniversalAnalytics-trackerId.png)
+![AddAnalytics IntelliSense](wiki/images/AddAnalytics-Intellisense.png)
+![AddAnalytics TrackerId](wiki/images/AddAnalytics-trackerId.png)
 
 #### Official Plugins extensions
 - [Display Features](https://developers.google.com/analytics/devguides/collection/analyticsjs/display-features)
@@ -33,7 +33,7 @@ public void ConfigureServices(IServiceCollection services)
     services.AddMvc();
 
     // Add application services.
-    services.AddUniversalAnalytics("UA-XXXX-Y")
+    services.AddAnalytics("UA-XXXX-Y")
         .AddDisplayFeatures()
         .AddLinkAttribution()
         .AddLinker();        
@@ -47,7 +47,7 @@ public void ConfigureServices(IServiceCollection services)
     services.AddMvc();
 
     // Add application services.
-    services.AddUniversalAnalytics("UA-XXXX-Y")
+    services.AddAnalytics("UA-XXXX-Y")
         .AddEcommerce();        
 }
 ```
@@ -59,13 +59,13 @@ public void ConfigureServices(IServiceCollection services)
     services.AddMvc();
 
     // Add application services.
-    services.AddUniversalAnalytics("UA-XXXX-Y")
+    services.AddAnalytics("UA-XXXX-Y")
         .AddEcommerceEnhanced();        
 }
 ```
 
 #### Where it originated from?
-This original library that was introduced in [CodePlex](http://universalanalytics.codeplex.com). The library was for .NET Framework web application to render **analytics.js** javascript client-side to interact with Google API from .NET language web application within the server-side code environment. Both ASP.NET WebForm and ASP.NET MVC. Its was good, but we would like to see a much more extensible and ambust platform, so we are rewriting the entire framework.
+This original library that was introduced in [CodePlex](http://Analytics.codeplex.com). The library was for .NET Framework web application to render **analytics.js** javascript client-side to interact with Google API from .NET language web application within the server-side code environment. Both ASP.NET WebForm and ASP.NET MVC. Its was good, but we would like to see a much more extensible and ambust platform, so we are rewriting the entire framework.
 
 #### How do i contribute?
 Universal Analytics is a powerful and continuous improving platform. We would like to invite developers to help maintain and add features so that this library is keep aligned with most of the popular web analytics out there. 

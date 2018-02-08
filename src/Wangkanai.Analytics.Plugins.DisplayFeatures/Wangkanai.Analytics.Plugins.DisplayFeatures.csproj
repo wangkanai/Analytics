@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Wangkanai.Analytics.Plugins.DisplayFeatures</AssemblyName>
+    <PackageId>Wangkanai.Analytics.Plugins.DisplayFeatures</PackageId>
+    <PackageTags>aspnetcore;analytics</PackageTags>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Wangkanai.Analytics.Core\Wangkanai.Analytics.Core.csproj" />
+  </ItemGroup>
+
+</Project>
