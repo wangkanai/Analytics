@@ -1,0 +1,8 @@
+title: Universal Analytics
+description: Google Universal Analytics .net server side code generator
+google_analytics: UA-362458-19
+show_downloads: true
+theme: jekyll-theme-slate
+
+gems:
+  - jekyll-mentions
