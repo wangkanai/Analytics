@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Analytics", "src\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Analytics.Tests", "test\Wangkanai.Analytics.Tests.csproj", "{13E9B013-1830-4CDE-B4D9-04B5C2E87872}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Analytics", "sample\Analytics\Analytics.csproj", "{F6C46460-F412-4B60-A6BB-6DEC61216BDD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,11 +33,16 @@ Global
 		{13E9B013-1830-4CDE-B4D9-04B5C2E87872}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13E9B013-1830-4CDE-B4D9-04B5C2E87872}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13E9B013-1830-4CDE-B4D9-04B5C2E87872}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6C46460-F412-4B60-A6BB-6DEC61216BDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6C46460-F412-4B60-A6BB-6DEC61216BDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6C46460-F412-4B60-A6BB-6DEC61216BDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6C46460-F412-4B60-A6BB-6DEC61216BDD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{F6C46460-F412-4B60-A6BB-6DEC61216BDD} = {63CF70CF-C922-4FBD-9DAD-10373F279C13}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D9EF9F97-B7BA-49FB-8532-47851C700F8A}
