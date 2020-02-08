@@ -1,20 +1,44 @@
+version: 0.0.103-build{build}
+image:
+  - Visual Studio 2019
 init:
   - git config --global core.autocrlf true
+dotnet_csproj:
+  patch: true
+  file: '**\*.csproj'
+  version: '{version}'
+  version_prefix: '{version}'
+  package_version: '{version}'
+  assembly_version: '{version}'
+  file_version: '{version}'
+  informational_version: '{version}'
+pull_requests:
+  do_not_increment_build_number: true
 branches:
   only:
     - master
-    - release
     - dev
+    - /^release\/.$/
     - /^(.*\/)?ci-.*$/
 build_script:
-  - ps: .\run.ps1 default-build
+  - ps: ./run.ps1
 clone_depth: 1
-environment:
-  global:
-    DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
-    DOTNET_CLI_TELEMETRY_OPTOUT: 1
-test: off
+test: 'off'
 artifacts:
   - path: '**\*.nupkg'
-deploy: off
-os: Visual Studio 2017
+deploy:
+  - provider: NuGet
+    server: https://www.myget.org/F/wangkanai/api/v2/package
+    api_key:
+      secure: YY8jIrOCrsuVBg/iqwS2jVwZ462EWKFMZ+95fBEDqM1DiH0H2w7OMgUx3rQ3XTzl
+    artifact: /.*\.nupkg/
+    on:
+      branch: dev
+  - provider: NuGet
+    server: https://nuget.pkg.github.com/wangkanai/index.json
+    username: wangkanai
+    api_key:
+      secure: +WL9sBLNxRSwSRTu5btK/smYjwDFZjIGjg5P676G7O9UpGyJr5Hzi32SQruRS9EF
+    artifact: /.*\.nupkg/
+    on:
+      branch: dev
