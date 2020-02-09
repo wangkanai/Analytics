@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1FE89F5A-C5E2-4582-AF75-A2893954F998}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5105FE8C-3240-4E1D-A8BC-8068BECDB263}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
@@ -12,17 +10,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{63CF70CF-C922-4FBD-9DAD-10373F279C13}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{3E65A8C8-C648-4019-BB4D-5D60E339C474}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnalyticsSandbox", "sample\AnalyticsSandbox\AnalyticsSandbox.csproj", "{43890264-4483-4BAC-87D7-9BB685F49B45}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EcommerceSandbox", "sample\EcommerceSandbox\EcommerceSandbox.csproj", "{0FD3D58A-9037-45F6-A4BF-37FC26B61C3B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EcommerceEnhanced", "sample\EcommerceEnhanced\EcommerceEnhanced.csproj", "{B48D20BD-9A38-4613-8B22-BAA5F4DF81ED}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.Analytics", "src\Wangkanai.Analytics\Wangkanai.Analytics.csproj", "{3F544CBE-BA73-4920-88BB-D7576E679B5E}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wangkanai.Analytics.Test", "test\Wangkanai.Analytics.Test\Wangkanai.Analytics.Test.csproj", "{9AD8856F-19E6-4318-95B2-6A7842440365}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Analytics", "src\Wangkanai.Analytics.csproj", "{7FEA07B3-E8D2-43FD-93D4-B5544885853A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,14 +36,10 @@ Global
 		{B48D20BD-9A38-4613-8B22-BAA5F4DF81ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B48D20BD-9A38-4613-8B22-BAA5F4DF81ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B48D20BD-9A38-4613-8B22-BAA5F4DF81ED}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3F544CBE-BA73-4920-88BB-D7576E679B5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3F544CBE-BA73-4920-88BB-D7576E679B5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3F544CBE-BA73-4920-88BB-D7576E679B5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3F544CBE-BA73-4920-88BB-D7576E679B5E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9AD8856F-19E6-4318-95B2-6A7842440365}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9AD8856F-19E6-4318-95B2-6A7842440365}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9AD8856F-19E6-4318-95B2-6A7842440365}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9AD8856F-19E6-4318-95B2-6A7842440365}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FEA07B3-E8D2-43FD-93D4-B5544885853A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FEA07B3-E8D2-43FD-93D4-B5544885853A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FEA07B3-E8D2-43FD-93D4-B5544885853A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FEA07B3-E8D2-43FD-93D4-B5544885853A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,8 +48,6 @@ Global
 		{43890264-4483-4BAC-87D7-9BB685F49B45} = {63CF70CF-C922-4FBD-9DAD-10373F279C13}
 		{0FD3D58A-9037-45F6-A4BF-37FC26B61C3B} = {63CF70CF-C922-4FBD-9DAD-10373F279C13}
 		{B48D20BD-9A38-4613-8B22-BAA5F4DF81ED} = {63CF70CF-C922-4FBD-9DAD-10373F279C13}
-		{3F544CBE-BA73-4920-88BB-D7576E679B5E} = {1FE89F5A-C5E2-4582-AF75-A2893954F998}
-		{9AD8856F-19E6-4318-95B2-6A7842440365} = {3E65A8C8-C648-4019-BB4D-5D60E339C474}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D9EF9F97-B7BA-49FB-8532-47851C700F8A}
