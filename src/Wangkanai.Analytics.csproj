@@ -15,7 +15,7 @@
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/wangkanai/analytics.git</RepositoryUrl>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-    <PackageIconUrl>https://raw.githubusercontent.com/wangkanai/Detection/dev/asset/avatar.png</PackageIconUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/wangkanai/analytics/dev/asset/analytics-logo.png</PackageIconUrl>
   </PropertyGroup>
 
   <ItemGroup>
