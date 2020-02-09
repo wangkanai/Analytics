@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.gitignore = .gitignore
 		Analytics.sln.licenseheader = Analytics.sln.licenseheader
 		appveyor.yml = appveyor.yml
+		.editorconfig = .editorconfig
+		LICENSE = LICENSE
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{63CF70CF-C922-4FBD-9DAD-10373F279C13}"
