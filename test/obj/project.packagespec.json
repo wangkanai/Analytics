@@ -1,0 +1,81 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "D:\\Sources\\Analytics\\test\\Wangkanai.Analytics.Tests.csproj",
+    "projectName": "Wangkanai.Analytics.Tests",
+    "projectPath": "D:\\Sources\\Analytics\\test\\Wangkanai.Analytics.Tests.csproj",
+    "outputPath": "D:\\Sources\\Analytics\\test\\obj\\",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "C:\\Microsoft\\Xamarin\\NuGet",
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp3.1"
+    ],
+    "sources": {
+      "https://api.nuget.org/v3/index.json": {},
+      "https://ci.appveyor.com/nuget/detection": {}
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "projectReferences": {
+          "D:\\Sources\\Analytics\\src\\Wangkanai.Analytics.csproj": {
+            "projectPath": "D:\\Sources\\Analytics\\src\\Wangkanai.Analytics.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp3.1": {
+      "dependencies": {
+        "Microsoft.AspNetCore.Hosting.Abstractions": {
+          "target": "Package",
+          "version": "[2.0.0, )"
+        },
+        "Microsoft.NET.Test.Sdk": {
+          "target": "Package",
+          "version": "[16.2.0, )"
+        },
+        "Moq": {
+          "target": "Package",
+          "version": "[4.13.1, )"
+        },
+        "coverlet.collector": {
+          "target": "Package",
+          "version": "[1.0.1, )"
+        },
+        "xunit": {
+          "target": "Package",
+          "version": "[2.4.0, )"
+        },
+        "xunit.runner.visualstudio": {
+          "target": "Package",
+          "version": "[2.4.0, )"
+        }
+      },
+      "imports": [
+        "net461",
+        "net462",
+        "net47",
+        "net471",
+        "net472",
+        "net48"
+      ],
+      "assetTargetFallback": true,
+      "warn": true,
+      "frameworkReferences": {
+        "Microsoft.NETCore.App": {
+          "privateAssets": "all"
+        }
+      },
+      "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+    }
+  }
+}

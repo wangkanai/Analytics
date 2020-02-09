@@ -18,6 +18,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EcommerceEnhanced", "sample
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Analytics", "src\Wangkanai.Analytics.csproj", "{7FEA07B3-E8D2-43FD-93D4-B5544885853A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Analytics.Tests", "test\Wangkanai.Analytics.Tests.csproj", "{70DD647D-EF07-4E9E-9120-784F70910DFE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +42,10 @@ Global
 		{7FEA07B3-E8D2-43FD-93D4-B5544885853A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7FEA07B3-E8D2-43FD-93D4-B5544885853A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7FEA07B3-E8D2-43FD-93D4-B5544885853A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70DD647D-EF07-4E9E-9120-784F70910DFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70DD647D-EF07-4E9E-9120-784F70910DFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70DD647D-EF07-4E9E-9120-784F70910DFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70DD647D-EF07-4E9E-9120-784F70910DFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
