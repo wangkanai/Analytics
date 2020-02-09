@@ -25,4 +25,9 @@
     <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Abstractions" />
+    <Folder Include="Builder" />
+  </ItemGroup>
+
 </Project>

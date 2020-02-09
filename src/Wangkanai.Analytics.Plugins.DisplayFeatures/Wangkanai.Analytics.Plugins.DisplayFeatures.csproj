@@ -25,4 +25,8 @@
     <ProjectReference Include="..\Wangkanai.Analytics.Core\Wangkanai.Analytics.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="DependencyInjection" />
+  </ItemGroup>
+
 </Project>
