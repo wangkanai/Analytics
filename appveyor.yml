@@ -1,4 +1,4 @@
-version: 0.0.101-build{build}
+version: 0.0.102-build{build}
 image:
   - Visual Studio 2019
 init:
