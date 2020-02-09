@@ -7,9 +7,9 @@
     <Nullable>enable</Nullable>
     <Version>0.0.100</Version>
 
-    <Authors>Sarin Na Wangkanai</Authors>
     <Description>ASP.NET Core Analytics.</Description>
-    <Copyright>Copyright © 2020 Sarin Na Wangkanai</Copyright>
+    <Authors>Sarin Na Wangkanai</Authors>
+    <Copyright>Sarin Na Wangkanai</Copyright>
     <PackageTags>aspnetcore;analytics</PackageTags>
     <PackageProjectUrl>https://github.com/wangkanai/analytics</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
@@ -19,10 +19,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <FrameworkReference Include="Microsoft.AspNetCore.App"/>
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Wangkanai.Detection" Version="3.0.0-alpha07" />
+    <PackageReference Include="Wangkanai.Detection" Version="3.0.0-alpha07"/>
   </ItemGroup>
 </Project>

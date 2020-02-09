@@ -1,4 +1,4 @@
-name: Detection-CI
+name: Analytics-CI
 
 on:
   pull_request:
