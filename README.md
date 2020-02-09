@@ -10,6 +10,8 @@ The core feature is to track website activity such as session duration, pages pe
 [![NuGet Pre Release](https://buildstats.info/nuget/wangkanai.analytics?includePreReleases=true)](https://www.nuget.org/packages/wangkanai.analytics)
 [![MyGet Badge](https://buildstats.info/myget/wangkanai/wangkanai.analytics)](https://www.myget.org/feed/wangkanai/package/nuget/wangkanai.analytics)
 
+[![Build history](https://buildstats.info/appveyor/chart/wangkanai/analytics)](https://ci.appveyor.com/project/wangkanai/analytics/history)
+
 ### Installation
 
 Add the NuGet package to your project.
