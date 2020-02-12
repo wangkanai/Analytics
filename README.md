@@ -1,4 +1,4 @@
-# Wangkanai Analytics (Alpha Development)
+## Wangkanai Analytics (Alpha Development)
 
 Wangkanai Analytics is a [.NET Core](https://dotnet.github.io/) library extension that tracks and generates details statistics about visitors to your website.
 The core feature is to track website activity such as session duration, pages per session, bounce rate and etc. of individuals using the site, along with the information on the source of the traffic.
